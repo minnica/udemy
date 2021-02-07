@@ -6,19 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-    <header>
+<body class="bg-dark text-white">
+    <!-- <header class="text-center text-white bg-dark">
         <h1>José Enrique Galicia Garatachía</h1>
-    </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
+    </header> -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contacto</a>
+            </li>
+          </ul>
     </nav>
-    <section>
+    <hr>
+    <section class="container text-center">
         <h2>Diseño y Desarrollo Freelancer</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88"
             viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
@@ -28,11 +42,13 @@
             <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
         </svg>
         <p>Chalco, Estado de México</p>
-        <a href="#">Contactar</a>
+        <a href="#" class="btn btn-dark">Contactar</a>
     </section>
-    <main>
-        <h2>Mis Servicios</h2>
-        <section>
+    <hr>
+    <main class="container bg-dark">
+        <h2 class="text-center">Mis Servicios</h2>
+        <div class="card-columns">
+        <section class="card text-center bg-dark text-white shadow">
             <h3>Diseño Web</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
@@ -47,7 +63,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt porro, distinctio fuga ipsa
                 doloribus a, aliquid</p>
         </section>
-        <section>
+        <section class="card text-center bg-dark text-white shadow">
             <h3>Aplicaciones Web</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="40"
                 height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
@@ -72,7 +88,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt porro, distinctio fuga ipsa
                 doloribus a, aliquid</p>
         </section>
-        <section>
+        <section class="card text-center bg-dark text-white shadow">
             <h3>E-commerce</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40"
                 height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
@@ -86,37 +102,50 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt porro, distinctio fuga ipsa
                 doloribus a, aliquid</p>
         </section>
+    </div>
     </main>
-    <section>
-        <h2>Contacto</h2>
+    <hr>
+    <section class="container d-flex justify-content-center">
+        <!-- <h2>Contacto</h2> -->
         <form action="">
-            <fieldset>
+            <fieldset class="">
                 <legend>Contactános completando el siguiente formulario</legend>
-                <div>
+                <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text" placeholder="Escribe tu nombre">
+                    <input type="text" placeholder="Escribe tu nombre" class="form-control">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="">Teléfono</label>
-                    <input type="number">
+                    <input type="number" class="form-control">
                 </div>
 
-                <div>
+                <div class="form-group"> 
                     <label for="">Correo</label>
-                    <input type="email">
+                    <input type="email" class="form-control">
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                    <textarea name="" id="" cols="30" rows="1" class="form-control"></textarea>
                 </div>
-                <input type="submit" name="" id="" value="enviar">
+                <input type="submit" name="" id="" value="enviar" class="btn btn-info">
             </fieldset>
         </form>
     </section>
-    <footer>
+    <hr>
+    <footer class=" bg-dark text-white text-center">
         <p>Todos los derechos reservados. José Enrique Galicia Garatachía Freelancer</p>
     </footer>
-</body>
 
-</html>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
